@@ -1,0 +1,14 @@
+-The Dragon Curve-
+
+This curve can be described by continually folding a piece of paper in half over and over(i.e.
+left over right over and over again.
+Take a strip of paper and fold it in half to the right.
+Fold it in half again to the right.
+If the strip was opened out now, unbending each fold to become
+a 90-degree turn, the turn sequence would be RRL, i.e. the second
+iteration of the Heighway dragon. Fold the strip in
+half again to the right, and the turn sequence of the
+unfolded strip is now RRLRRLL – the third iteration of the
+Heighway dragon. Continuing folding the strip in half to the right to
+create further iterations of the Heighway dragon
+(in practice, the strip becomes too thick to fold sharply after four or five iterations).
