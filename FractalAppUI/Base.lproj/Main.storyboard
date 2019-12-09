@@ -61,22 +61,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nothing here yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alk-6d-lLt">
-                                <rect key="frame" x="128" y="245" width="125" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tap to increase the number of triangles " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKQ-Xb-WW2">
+                                <rect key="frame" x="39" y="579" width="337" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UqG-dr-JSh">
+                                <rect key="frame" x="20" y="164" width="374" height="397"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="NEE-ap-9g3" kind="embed" id="IEm-JO-kcL"/>
+                                </connections>
+                            </containerView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.1091483174" green="0.010516009620000001" blue="0.22271696890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="nAz-Tq-F3e"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="MMK-0K-q8Z" appends="YES" id="Dnp-Ly-JqE"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="ncu-pb-9Dc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hIo-BM-mdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MMK-0K-q8Z"/>
             </objects>
-            <point key="canvasLocation" x="2064" y="1710"/>
+            <point key="canvasLocation" x="2063.768115942029" y="1709.5982142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xzm-Zx-PYK">
@@ -85,23 +97,14 @@
                     <view key="view" contentMode="scaleToFill" id="MKb-Nt-80b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KT3-Q4-XQa">
-                                <rect key="frame" x="146" y="240" width="39" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.1091483174" green="0.010516009620000001" blue="0.22271696890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="h2T-kL-FGi"/>
                     </view>
                     <navigationItem key="navigationItem" id="QB9-RH-Jow"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytW-Rs-Lue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2890" y="1710"/>
+            <point key="canvasLocation" x="2889.8550724637685" y="1709.5982142857142"/>
         </scene>
         <!--About Table View Controller2-->
         <scene sceneID="ik6-Hf-vol">
@@ -172,7 +175,7 @@
                                     <segue destination="nVC-gL-M83" kind="push" id="AC0-iw-3rs"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tr6-OR-6wS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="220px-Fractal_dragon_curve" translatesAutoresizingMaskIntoConstraints="NO" id="tr6-OR-6wS">
                                 <rect key="frame" x="87" y="187" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -193,13 +196,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ifk-Xv-5Gv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jXy-z5-7z7">
-                                <rect key="frame" x="31" y="199" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.1091483174" green="0.010516009620000001" blue="0.22271696890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="zlZ-wh-WYe"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fl1-f7-CER"/>
@@ -215,7 +212,7 @@
                     <view key="view" contentMode="scaleToFill" id="8Kz-44-EKh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.1091483174" green="0.010516009620000001" blue="0.22271696890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cvx-A2-SE6"/>
                     </view>
                     <navigationItem key="navigationItem" id="8q0-hI-efi"/>
@@ -231,7 +228,7 @@
                     <view key="view" contentMode="scaleToFill" id="gu1-c4-YGm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.1091483174" green="0.010516009620000001" blue="0.22271696890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="aln-qx-Uck"/>
                     </view>
                     <navigationItem key="navigationItem" id="fcM-2l-NQx"/>
@@ -264,7 +261,7 @@
                                     <segue destination="AH4-wl-1c7" kind="push" id="2Dj-cJ-beW"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shY-aA-qSH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mand" translatesAutoresizingMaskIntoConstraints="NO" id="shY-aA-qSH">
                                 <rect key="frame" x="87" y="208" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -302,7 +299,7 @@
                                     <segue destination="ZRr-Am-UZM" kind="push" id="b3L-HU-va5"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3eW-OD-qfK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Julia_set_(indigo)" translatesAutoresizingMaskIntoConstraints="NO" id="3eW-OD-qfK">
                                 <rect key="frame" x="87" y="187" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -522,9 +519,26 @@
             </objects>
             <point key="canvasLocation" x="2255" y="157"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uAB-iU-Qhx">
+            <objects>
+                <viewController id="NEE-ap-9g3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BSS-wK-9qu" customClass="Sierpinski" customModule="FractalAppUI" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="397"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.1091483174" green="0.010516009620000001" blue="0.22271696890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4e-dQ-593" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2346" y="2215"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="220px-Fractal_dragon_curve" width="220" height="220"/>
+        <image name="Julia_set_(indigo)" width="200" height="150"/>
         <image name="fern" width="358" height="662"/>
+        <image name="mand" width="200" height="150"/>
         <image name="sierp2" width="1024" height="887"/>
     </resources>
 </document>
