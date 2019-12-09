@@ -11,7 +11,7 @@ import UIKit
 
 class aboutViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
-    let names = ["Sierpinski Triangle", "Fractal 2", "Fractal 3", "Fractal 4", "Fractal 5"]
+    let names = ["Sierpinski Triangle", "Barnsley Fern", "The Dragon Curve", "Mandelbrot Set", "Julia Set"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(names.count)
